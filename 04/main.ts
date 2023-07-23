@@ -12,6 +12,7 @@ function part2(): number {
     return findPrefix("000000");
 }
 
+// TODO: use a md5 library instead of syscall
 function findPrefix(startStr: string): number {
     const inputFormatted = input.
         trim();
